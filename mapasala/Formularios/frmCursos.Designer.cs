@@ -122,7 +122,7 @@ namespace mapasala.Formularios
             this.DtGridCursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtGridCursos.Location = new System.Drawing.Point(0, 96);
             this.DtGridCursos.Name = "DtGridCursos";
-            this.DtGridCursos.Size = new System.Drawing.Size(691, 150);
+            this.DtGridCursos.Size = new System.Drawing.Size(788, 323);
             this.DtGridCursos.TabIndex = 9;
             this.DtGridCursos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtGridCursos_CellClick);
             // 

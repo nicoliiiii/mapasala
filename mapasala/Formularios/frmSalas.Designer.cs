@@ -142,9 +142,9 @@ namespace mapasala.Formularios
             this.dtGridSalas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtGridSalas.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dtGridSalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGridSalas.Location = new System.Drawing.Point(38, 73);
+            this.dtGridSalas.Location = new System.Drawing.Point(31, 74);
             this.dtGridSalas.Name = "dtGridSalas";
-            this.dtGridSalas.Size = new System.Drawing.Size(910, 329);
+            this.dtGridSalas.Size = new System.Drawing.Size(885, 300);
             this.dtGridSalas.TabIndex = 13;
             this.dtGridSalas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridSalas_CellClick);
             // 

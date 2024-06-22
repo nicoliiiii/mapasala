@@ -80,9 +80,9 @@ namespace mapasala.Formularios
             // 
             // txtNomeProf
             // 
-            this.txtNomeProf.Location = new System.Drawing.Point(100, 42);
+            this.txtNomeProf.Location = new System.Drawing.Point(119, 42);
             this.txtNomeProf.Name = "txtNomeProf";
-            this.txtNomeProf.Size = new System.Drawing.Size(129, 20);
+            this.txtNomeProf.Size = new System.Drawing.Size(88, 20);
             this.txtNomeProf.TabIndex = 5;
             // 
             // bntSalvar
@@ -162,7 +162,6 @@ namespace mapasala.Formularios
             this.Name = "frmProfessores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProfessores";
-            this.Load += new System.EventHandler(this.frmProfessores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DtGridProfessores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numIdProf)).EndInit();
             this.ResumeLayout(false);
