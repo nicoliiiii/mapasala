@@ -183,7 +183,7 @@ namespace mapasala.Formularios
             this.Controls.Add(this.lblIdCursos);
             this.Name = "frmCursos";
             this.Text = "frmCursos";
-            this.Load += new System.EventHandler(this.frmCursos_Load);
+          
             ((System.ComponentModel.ISupportInitialize)(this.DtGridCursos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numIdCursos)).EndInit();
             this.ResumeLayout(false);
