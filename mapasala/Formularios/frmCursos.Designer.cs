@@ -118,7 +118,7 @@ namespace mapasala.Formularios
             // DtGridCursos
             // 
             this.DtGridCursos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DtGridCursos.BackgroundColor = System.Drawing.Color.MistyRose;
+            this.DtGridCursos.BackgroundColor = System.Drawing.Color.LavenderBlush;
             this.DtGridCursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtGridCursos.Location = new System.Drawing.Point(0, 96);
             this.DtGridCursos.Name = "DtGridCursos";

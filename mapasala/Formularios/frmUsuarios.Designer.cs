@@ -126,7 +126,7 @@ namespace mapasala.Formularios
             // DtGridUsuarios
             // 
             this.DtGridUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DtGridUsuarios.BackgroundColor = System.Drawing.Color.MistyRose;
+            this.DtGridUsuarios.BackgroundColor = System.Drawing.Color.LavenderBlush;
             this.DtGridUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtGridUsuarios.Location = new System.Drawing.Point(32, 103);
             this.DtGridUsuarios.Name = "DtGridUsuarios";

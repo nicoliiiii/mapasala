@@ -104,7 +104,7 @@ namespace mapasala.Formularios
             // DtGridDisciplina
             // 
             this.DtGridDisciplina.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DtGridDisciplina.BackgroundColor = System.Drawing.Color.MistyRose;
+            this.DtGridDisciplina.BackgroundColor = System.Drawing.Color.LavenderBlush;
             this.DtGridDisciplina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtGridDisciplina.Location = new System.Drawing.Point(15, 81);
             this.DtGridDisciplina.Name = "DtGridDisciplina";
@@ -185,7 +185,6 @@ namespace mapasala.Formularios
             this.Name = "frmDisciplinas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDisciplinas";
-            this.Load += new System.EventHandler(this.frmDisciplinas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DtGridDisciplina)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numIdDisciplinas)).EndInit();
             this.ResumeLayout(false);

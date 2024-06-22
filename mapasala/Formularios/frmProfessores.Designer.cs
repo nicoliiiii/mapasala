@@ -98,7 +98,7 @@ namespace mapasala.Formularios
             // DtGridProfessores
             // 
             this.DtGridProfessores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DtGridProfessores.BackgroundColor = System.Drawing.Color.MistyRose;
+            this.DtGridProfessores.BackgroundColor = System.Drawing.Color.LavenderBlush;
             this.DtGridProfessores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtGridProfessores.Location = new System.Drawing.Point(26, 113);
             this.DtGridProfessores.Name = "DtGridProfessores";

@@ -140,7 +140,7 @@ namespace mapasala.Formularios
             // dtGridSalas
             // 
             this.dtGridSalas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtGridSalas.BackgroundColor = System.Drawing.Color.MistyRose;
+            this.dtGridSalas.BackgroundColor = System.Drawing.Color.LavenderBlush;
             this.dtGridSalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGridSalas.Location = new System.Drawing.Point(31, 74);
             this.dtGridSalas.Name = "dtGridSalas";
