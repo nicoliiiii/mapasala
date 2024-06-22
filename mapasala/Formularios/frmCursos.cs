@@ -28,6 +28,7 @@ namespace mapasala.Formularios
             dados.Rows.Add(2, "administraçao", "noite", true);
             dados.Rows.Add(3, "serviços juridicos", "tarde", false);
             dados.Rows.Add(4, " infonet", "tarde", true);
+            dados.Rows.Add(5, "itinerario formativo", "manha", true);
 
             DtGridCursos.DataSource = dados;
         }
@@ -86,5 +87,7 @@ namespace mapasala.Formularios
         {
             DtGridCursos.Rows.RemoveAt(LinhaSelecionada);
         }
+
+        
     }
 }
