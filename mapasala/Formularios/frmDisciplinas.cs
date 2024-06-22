@@ -24,10 +24,11 @@ namespace mapasala.Formularios
                 dados.Columns.Add(atributos.Name);
             }
 
-            dados.Rows.Add(1, "matematica", "math", true);
+            dados.Rows.Add(1, "matematica", "mat", true);
             dados.Rows.Add(2, "português", "port", true);
             dados.Rows.Add(3, "fisica", "fis", false);
             dados.Rows.Add(4, "desenvolvimento de sistemas", "DS",true);
+            dados.Rows.Add(5, "geografia", "geo", true);
 
             DtGridDisciplina.DataSource = dados;
         }
@@ -88,5 +89,7 @@ namespace mapasala.Formularios
 
 
         }
+
+       
     }
     }
