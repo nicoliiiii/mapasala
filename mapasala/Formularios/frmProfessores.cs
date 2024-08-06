@@ -1,4 +1,5 @@
-﻿using Model.Entidades;
+﻿using mapasala.DAO;
+using Model.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace mapasala.Formularios
     public partial class frmProfessores : Form
     {
         DataTable dados;
+        ProfessorDAO dao = new ProfessorDAO();
         int LinhaSelecionada;
         public frmProfessores()
         {
@@ -23,6 +25,8 @@ namespace mapasala.Formularios
             {
                 dados.Columns.Add(atributos.Name);
             }
+            dados = dao.ObterProfessores();
+
             dados.Rows.Add(1, "fernando", "ferneco");
             dados.Rows.Add(2, "Alexandre", "Galvani");
             dados.Rows.Add(3, "eliete", "elietelinda");
@@ -32,12 +36,15 @@ namespace mapasala.Formularios
 
         private void bntSalvar_Click(object sender, EventArgs e)
         {
-            ProfessoresEntidade Professor = new ProfessoresEntidade();
-            Professor.Id = Convert.ToInt32(numIdProf.Value);
-            Professor.Nome = txtNomeProf.Text;
-            Professor.Apelido = txtApelidoprof.Text;
+            ProfessoresEntidade p = new ProfessoresEntidade();
+            p.Id = Convert.ToInt32(numIdProf.Value);
+            p.Nome = txtNomeProf.Text;
+            p.Apelido = txtApelidoprof.Text;
 
-            dados.Rows.Add(Professor.Linha());
+            ProfessorDAO dao = new ProfessorDAO();
+            dao.Inserir(p);
+            DtGridProfessores.DataSource = dao.ObterProfessores();
+
             LimparCampos();
         }
 

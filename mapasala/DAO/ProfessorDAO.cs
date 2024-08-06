@@ -1,4 +1,6 @@
 ﻿using Model.Entidades;
+using System;
+using System.Data;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Text;
@@ -17,7 +19,7 @@ namespace mapasala.DAO
         public void Inserir(ProfessoresEntidade professor)
         {
             Conexao.Open();
-            string query = "Insert into Professores () Values (@nome @apelido) ";
+            string query = "Insert into Professores (Nome,Apelido) Values (@nome, @apelido) ";
             SqlCommand comando = new SqlCommand(query, Conexao);
             SqlParameter parametro1 = new SqlParameter("@nome", professor.Nome);
             SqlParameter parametro2 = new SqlParameter("@apelido", professor.Apelido);
@@ -27,7 +29,35 @@ namespace mapasala.DAO
             Conexao.Close();
 
         }
+        public DataTable ObterProfessores()
+        {
+            DataTable dt = new DataTable();
+            Conexao.Open();
+            string query = "SELECT Id, Nome, Apelido  FROM Professores Order by Id desc";
+            SqlCommand comando = new SqlCommand(query, Conexao);
 
+            SqlDataReader Leitura = comando.ExecuteReader();
+            foreach (var atributos in typeof(ProfessoresEntidade).GetProperties())
+            {
+                dt.Columns.Add(atributos.Name);
+            }
+
+            if (Leitura.HasRows)
+            {
+                while (Leitura.Read())
+                {
+                    ProfessoresEntidade p = new ProfessoresEntidade();
+                    p.Id = Convert.ToInt32(Leitura[0]);
+                    p.Nome = Leitura[1].ToString();
+                    p.Apelido = Leitura[2].ToString();
+                    dt.Rows.Add(p.Linha());
+
+                }
+            }
+            
+
+            return dt;
+        }
 
     }
 }
